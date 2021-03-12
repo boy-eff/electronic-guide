@@ -4,7 +4,7 @@ uses
   Vcl.Forms,
   Main in 'Main.pas' {MainForm},
   Information in 'Information.pas' {InfoForm},
-  Unit1 in 'Unit1.pas' {Form1};
+  SelectionOfStartAndEndPoints in 'SelectionOfStartAndEndPoints.pas' {Form1};
 
 {$R *.res}
 

@@ -106,7 +106,7 @@
             <Form>InfoForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit1.pas">
+        <DCCReference Include="SelectionOfStartAndEndPoints.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>

@@ -14,11 +14,12 @@ type
     CheckListBox1: TCheckListBox;
     Panel2: TPanel;
     Image1: TImage;
+    SelectButton: TButton;
     procedure InfoClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure CheckListBox1ClickCheck(Sender: TObject);
     procedure CheckListBox1DblClick(Sender: TObject);
+    procedure SelectButtonClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -39,15 +40,11 @@ var
 
 implementation
 
-uses Information,Unit1;
+uses Information,SelectionOfStartAndEndPoints;
 
 {$R *.dfm}
 
 
-procedure TMainForm.Button1Click(Sender: TObject);
-begin
-  Form1.ShowModal;
-end;
 
 procedure TMainForm.CheckListBox1ClickCheck(Sender: TObject);
 var i : integer;
@@ -141,6 +138,11 @@ begin
   if CheckListBox1.ItemIndex <> -1 then
   InfoForm.ShowModal
   else ShowMessage('Сначала добавьте объект');
+end;
+
+procedure TMainForm.SelectButtonClick(Sender: TObject);
+begin
+  Form1.ShowModal;
 end;
 
 end.

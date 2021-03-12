@@ -47,6 +47,7 @@ begin
   Image1.Picture.LoadFromFile(Main.arrOfLandmarks[i].image);
   end;
 
+
 end;
 
 end.
