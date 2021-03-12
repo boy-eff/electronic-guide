@@ -1,0 +1,6 @@
+JpgImage_1 RCDATA "Win32\\Debug\\images\\Беловежская пуща.jpg"
+Bitmap_1 BITMAP "Win32\\Debug\\images\\Карта Беларуси.bmp"
+JpgImage_2 RCDATA "Win32\\Debug\\images\\Карта Беларуси.jpg"
+JpgImage_3 RCDATA "Win32\\Debug\\images\\Мирский замок.jpg"
+JpgImage_4 RCDATA "Win32\\Debug\\images\\Национальная библиотека.jpg"
+JpgImage_5 RCDATA "Win32\\Debug\\images\\Несвижский замок.jpg"

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.632,C:\Users\Asus\Desktop\Курсач\Project31.dproj=C:\Users\Asus\Desktop\Курсач\GUI.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.152,C:\Users\Asus\Desktop\Курсач\GUI.dproj=C:\Users\Asus\Desktop\GUI\GUI.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.440,=C:\Users\Asus\Desktop\GUI\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.204,C:\Users\Asus\Desktop\GUI\Unit1.pas=C:\Users\Asus\Desktop\GUI\Information.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.204,C:\Users\Asus\Desktop\GUI\Unit1.dfm=C:\Users\Asus\Desktop\GUI\Information.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.718,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.730,C:\Users\Asus\Desktop\Курсач\Project31.dproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project31.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.923,C:\Users\Asus\Desktop\Курсач\Project31.dproj=C:\Users\Asus\Desktop\Курсач\Project31.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.877,C:\Users\Asus\Desktop\Курсач\Unit3.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.877,C:\Users\Asus\Desktop\Курсач\Unit3.dfm=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Asus\Desktop\Курсач\Unit3.dfm=C:\Users\Asus\Desktop\Курсач\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.132,C:\Users\Asus\Desktop\GUI\Main.dfm=C:\Users\Asus\Desktop\Курсач\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.753,=C:\Users\Asus\Desktop\GUI\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,=C:\Users\Asus\Desktop\GUI\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.132,C:\Users\Asus\Desktop\GUI\Main.pas=C:\Users\Asus\Desktop\Курсач\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Asus\Desktop\Курсач\Unit3.pas=C:\Users\Asus\Desktop\Курсач\Main.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Information.pas"/>
+    <File Path="Information.dfm"/>
+    <File Path="Main.pas"/>
+    <File Path="Main.dfm"/>
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
