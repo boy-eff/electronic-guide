@@ -1,7 +1,6 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
   ClientHeight = 231
   ClientWidth = 241
   Color = clBtnFace
@@ -44,7 +43,6 @@ object Form1: TForm1
       Width = 185
       Height = 21
       TabOrder = 0
-      Text = 'ComboBox1'
     end
     object EndComboBox: TComboBox
       Left = 24
@@ -52,7 +50,6 @@ object Form1: TForm1
       Width = 185
       Height = 21
       TabOrder = 1
-      Text = 'ComboBox1'
     end
   end
   object PlotRouteButton: TButton

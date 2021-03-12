@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.CheckLst,
-  Vcl.Imaging.jpeg;
+  Vcl.Imaging.jpeg, Vcl.Menus;
 
 const arrSize = 4;
 type
@@ -15,6 +15,14 @@ type
     Panel2: TPanel;
     Image1: TImage;
     SelectButton: TButton;
+    MainMenu1: TMainMenu;
+    Edit1: TMenuItem;
+    Add1: TMenuItem;
+    Delete1: TMenuItem;
+    Edit2: TMenuItem;
+    Clear1: TMenuItem;
+    Help1: TMenuItem;
+    Info1: TMenuItem;
     procedure InfoClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure CheckListBox1ClickCheck(Sender: TObject);
