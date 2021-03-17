@@ -1,0 +1,96 @@
+object InfoForm: TInfoForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Information'
+  ClientHeight = 265
+  ClientWidth = 410
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo1: TMemo
+    Left = 0
+    Top = 0
+    Width = 223
+    Height = 224
+    Align = alClient
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    BorderStyle = bsNone
+    Lines.Strings = (
+      'Memo1')
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 223
+    Top = 0
+    Width = 187
+    Height = 224
+    Align = alRight
+    AutoSize = True
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 1
+    object Panel2: TPanel
+      Left = 0
+      Top = 0
+      Width = 187
+      Height = 208
+      Align = alTop
+      AutoSize = True
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      object Image1: TImage
+        Left = 0
+        Top = 0
+        Width = 187
+        Height = 208
+        Align = alClient
+        AutoSize = True
+        Center = True
+        ParentShowHint = False
+        Proportional = True
+        ShowHint = False
+        Stretch = True
+        ExplicitLeft = 2
+        ExplicitTop = 1
+        ExplicitWidth = 138
+        ExplicitHeight = 206
+      end
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 224
+    Width = 410
+    Height = 41
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'Panel3'
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 2
+    object Button1: TButton
+      Left = 168
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'OK'
+      Default = True
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+end

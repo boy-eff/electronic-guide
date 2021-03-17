@@ -3,7 +3,6 @@ object InfoForm: TInfoForm
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Information'
   ClientHeight = 265
   ClientWidth = 410
   Color = clBtnFace

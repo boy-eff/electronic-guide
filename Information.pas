@@ -45,6 +45,8 @@ begin
   begin
   Memo1.Text := Main.arrOfLandmarks[i].shortDesc;
   Image1.Picture.LoadFromFile(Main.arrOfLandmarks[i].image);
+  InfoForm.Caption := Main.arrOfLandmarks[i].name;
+  break;
   end;
 
 

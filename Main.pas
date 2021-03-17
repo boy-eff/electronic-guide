@@ -29,6 +29,7 @@ type
     procedure CheckListBox1ClickCheck(Sender: TObject);
     procedure CheckListBox1DblClick(Sender: TObject);
     procedure SelectButtonClick(Sender: TObject);
+    procedure Info1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -49,7 +50,7 @@ var
 
 implementation
 
-uses Information,SelectionOfStartAndEndPoints;
+uses Information,SelectionOfStartAndEndPoints,Help;
 
 {$R *.dfm}
 
@@ -140,6 +141,11 @@ begin
 
 
 
+end;
+
+procedure TMainForm.Info1Click(Sender: TObject);
+begin
+  Help.Form2.ShowModal;
 end;
 
 procedure TMainForm.InfoClick(Sender: TObject);
