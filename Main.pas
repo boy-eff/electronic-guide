@@ -30,6 +30,7 @@ type
     procedure CheckListBox1DblClick(Sender: TObject);
     procedure SelectButtonClick(Sender: TObject);
     procedure Info1Click(Sender: TObject);
+    procedure Delete1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -54,27 +55,28 @@ uses Information,SelectionOfStartAndEndPoints,Help;
 
 {$R *.dfm}
 
-
+procedure DrawCircle(x,y : integer; colour : TColor; canvas : TCanvas);
+  var i : integer;
+begin
+  canvas.Brush.Color := colour;
+  canvas.Ellipse(x - 10,y - 10,x + 10,y + 10);
+end;
 
 procedure TMainForm.CheckListBox1ClickCheck(Sender: TObject);
 var i : integer;
 buff : string;
-x,y : integer;
 begin
   i := 0;
   buff := CheckListBox1.Items[CheckListBox1.ItemIndex];
   while ArrOfLandmarks[i].name <> buff do inc(i);
-  x := ArrOfLandmarks[i].x;
-  y := ArrOfLandmarks[i].y;
+
   if CheckListBox1.Checked[CheckListBox1.ItemIndex] then
   begin
-  Image1.Canvas.Brush.Color := clRed;
-  Image1.Canvas.Ellipse(x - 10,y - 10,x + 10,y + 10);
+  DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clRed,Image1.Canvas);
   end
   else
   begin
-    Image1.Canvas.Brush.Color := clWhite;
-    Image1.Canvas.Ellipse(x - 10,y - 10,x + 10,y + 10);
+    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
   end;
 
 
@@ -87,6 +89,17 @@ begin
     InfoForm.ShowModal
   else ShowMessage('Сначала добавьте объект');
 end;
+
+procedure TMainForm.Delete1Click(Sender: TObject);
+  var i,x,y : integer;
+begin
+  for i := 0 to arrSize - 1 do
+  CheckListBox1.CheckAll(cbUnchecked);
+  for i := 1 to arrSize do DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
+  CheckListBox1.ItemIndex := -1;
+end;
+
+
 
 procedure TMainForm.FormShow(Sender: TObject);
   var
@@ -126,14 +139,9 @@ begin
 
     end;
     for i := 1 to arrSize do
-    CheckListBox1.Items.Add(ArrOfLandmarks[i].name);
-
-    Image1.Canvas.Brush.Color := clWhite;
-    for i := 1 to arrSize do
     begin
-    x := arrOfLandmarks[i].x;
-    y := arrOfLandmarks[i].y;
-    Image1.Canvas.Ellipse(x - 10,y - 10,x + 10,y + 10);
+    CheckListBox1.Items.Add(ArrOfLandmarks[i].name);
+    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
     end;
       
 
