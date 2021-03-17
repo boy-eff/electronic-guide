@@ -15,6 +15,7 @@ type
     EndOfRoute: TLabel;
     PlotRouteButton: TButton;
     procedure FormShow(Sender: TObject);
+    procedure FormHide(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,6 +30,12 @@ implementation
 uses Main;
 
 {$R *.dfm}
+
+procedure TForm1.FormHide(Sender: TObject);
+begin
+  StartComboBox.Clear;
+  EndComboBox.Clear;
+end;
 
 procedure TForm1.FormShow(Sender: TObject);
 var i : integer;

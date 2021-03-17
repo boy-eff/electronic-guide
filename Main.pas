@@ -23,6 +23,7 @@ type
     Clear1: TMenuItem;
     Help1: TMenuItem;
     Info1: TMenuItem;
+    Image2: TImage;
     procedure InfoClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure CheckListBox1ClickCheck(Sender: TObject);
