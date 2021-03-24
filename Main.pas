@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.CheckLst,
-  Vcl.Imaging.jpeg, Vcl.Menus;
+  Vcl.Imaging.jpeg, Vcl.Menus, Vcl.Imaging.pngimage;
 
 const arrSize = 4;
 type
@@ -72,11 +72,11 @@ begin
 
   if CheckListBox1.Checked[CheckListBox1.ItemIndex] then
   begin
-  DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clRed,Image1.Canvas);
+  DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clRed,Image2.Canvas);
   end
   else
   begin
-    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
+    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image2.Canvas);
   end;
 
 
@@ -95,7 +95,7 @@ procedure TMainForm.Delete1Click(Sender: TObject);
 begin
   for i := 0 to arrSize - 1 do
   CheckListBox1.CheckAll(cbUnchecked);
-  for i := 1 to arrSize do DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
+  for i := 1 to arrSize do DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image2.Canvas);
   CheckListBox1.ItemIndex := -1;
 end;
 
@@ -141,7 +141,7 @@ begin
     for i := 1 to arrSize do
     begin
     CheckListBox1.Items.Add(ArrOfLandmarks[i].name);
-    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image1.Canvas);
+    DrawCircle(arrOfLandmarks[i].x,arrOfLandmarks[i].y,clWhite,Image2.Canvas);
     end;
       
 
