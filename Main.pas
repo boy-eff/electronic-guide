@@ -45,13 +45,18 @@ type
   shortDesc : string;
   id : word;
   end;
+  type TArrLandmarks = array[1..arrSize] of landmark;
+  TArrRoute = array[1..15] of byte;
 var
   MainForm: TMainForm;
-  arrOfLandmarks : array[1..arrSize] of landmark;
+  arrOfLandmarks : TArrLandmarks;
+  arrOfRoute : TArrRoute;
+  RouteSize : byte = 1;
+
 
 implementation
 
-uses Information,SelectionOfStartAndEndPoints,Help;
+uses Information,SelectionOfStartAndEndPoints,Help,RouteChoice;
 
 {$R *.dfm}
 
@@ -64,9 +69,10 @@ end;
 
 procedure TMainForm.CheckListBox1ClickCheck(Sender: TObject);
 var i : integer;
+j : byte;
 buff : string;
 begin
-  i := 0;
+  i := 1;
   buff := CheckListBox1.Items[CheckListBox1.ItemIndex];
   while ArrOfLandmarks[i].name <> buff do inc(i);
 
@@ -117,6 +123,7 @@ begin
   for i := 1 to arrSize do
     begin
       arrOfLandmarks[i].image := 'images/' + arrOfLandmarks[i].name + '.jpg';
+      arrOfLandmarks[i].id := i;
     end;
   for i := 1 to arrSize do
     begin
@@ -165,7 +172,7 @@ end;
 
 procedure TMainForm.SelectButtonClick(Sender: TObject);
 begin
-  Form1.ShowModal;
+  RouteChoiceForm.ShowModal;
 end;
 
 end.
